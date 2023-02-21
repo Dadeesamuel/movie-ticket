@@ -69,13 +69,13 @@ function showMovie(movieId) {
     buttons.empty();
     buttons.append("<button class='deleteButton' id=" + " " + movie.id + ">Delete</button>");
     if (movie.movieName === "thor") {
-        $(".m-price").html("#3000");
+        $(".m-price").html("#"+3000*movie.movieSeat);
     } else if (movie.movieName === "Doctor Strange") {
-        $(".m-price").html("#2500");
+        $(".m-price").html("#"+2500*movie.movieSeat);
     } else if (movie.movieName === "Captain Marvel") {
-        $(".m-price").html("#1000");
+        $(".m-price").html("#"+1500*movie.movieSeat);
     } else if (movie.movieName === "Avenger") {
-        $(".m-price").html("#1500");
+        $(".m-price").html("#"+3500*movie.movieSeat);
     }
     else {
         $(".m-price").html("#0000");

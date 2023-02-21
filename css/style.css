@@ -34,7 +34,6 @@ nav ul li {
     display: inline-block;
     list-style: none;
     margin: 10px 20px;
-    /* box-shadow: 0 5px 15px rgba(107, 106, 106, 0.6); */
 }
 
 li a {
@@ -42,6 +41,7 @@ li a {
     font-size: 18px;
     color: black;
     position: relative;
+    
 }
 
 nav ul li a:hover,
@@ -78,35 +78,53 @@ nav ul li a:hover::after {
 
 
 
-
+/* movie */
 #ticket{
     background-color: rgb(231, 230, 230);
 }
+#ticket .s-movie{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+#ticket .s-movie img {
+    width: 24%;
+    height: 40vh;
+    padding: 10px;
+}
+
 label{
     font-weight: 600;
 }
 .head{
+    padding-top: 40px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 .head h2{
-    font-size: 40px;
-    font-weight: 600;
+    font-size: 60px;
+    font-weight: 900;
     padding-top: 0;
     margin-top: 0;
+}
+.head p{
+    font-size: 24px;
+    font-weight: 200;
+    font-style: italic;
 }
 .head .logo{
     width: 200px;
     padding-bottom: 0;
     margin-bottom: 0;
 }
-.select-movie{
-    display: flex;
-        flex-direction: row;
-        margin: 10px;
-}
+
+
+
 .form{
     padding-right: 10px;
 }
@@ -216,13 +234,32 @@ form input#button{
 }
 
 
-/* movie */
-.s-movie{
-    width: 100%;
+
+@media (max-width:477px){
+    #ticket .s-movie img{
+        width: 100%;
+}
+#ticket .s-movie img {
+    width: 24%;
+    height: 20vh; 
+    padding: 5px;
+}
+img.logo {
+    width: 25%;
+}
+.link{
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    height: 40vh;
-    padding: 20px;
-    cursor: pointer;
+}
+.lin{
+    display: none;
+}
+.head h2 {
+    font-size: 40px;
+    font-weight: 500;
+}
+.head p {
+    font-size: 15px;
+    font-weight: 200;
+    font-style: italic;
+}
 }
